@@ -128,7 +128,8 @@ def leap_frog(u, h, gu, gh, n_grid):
     derived from equations 4.16 and 4.17.
     """
     for pt in np.arange(1, n_grid - 1):
-        u.next[pt] = u.prev[pt] - gu * (h.now[pt + 1] - h.now[pt - 1])
+        u.next[pt] = u.prev[pt] + f * v.now[pt] - gu * (h.now[pt + 1] - h.now[pt - 1])
+        v.next[pt] = v.prev[pt] - f * u.now[pt]
         h.next[pt] = h.prev[pt] - gh * (u.now[pt + 1] - u.now[pt - 1])
 #     Alternate vectorized implementation:
 #     u.next[1:n_grid - 1] = (u.prev[1:n_grid - 1]
