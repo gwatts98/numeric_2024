@@ -5,6 +5,9 @@ timevars:
 uservars:
   albedo_white: 0.75
   chi: 0.3
+  rabchi: 0.3
+  A: 0.5
+  C: 1
   S0: 3668.0
   L: 1.3
   albedo_black: 0.25
@@ -13,7 +16,7 @@ uservars:
 initvars:
   whiteconc: 0.24
   blackconc: 0.01
-  rabbits: 0
+  rab_i: 0.17
 adaptvars:
   dtpassmin: 0.1
   dtpassmax: 5.0
