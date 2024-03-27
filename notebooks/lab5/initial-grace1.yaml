@@ -6,8 +6,11 @@ uservars:
   albedo_white: 0.75
   chi: 0.3
   rabchi: 0.3
-  A: 1
-  C: 1
+  foxchi: 0.2
+  Crgr: 1
+  Crbr: 2
+  Cfgr: 1
+  Cfbr: 1
   S0: 3668.0
   L: 1.3
   albedo_black: 0.25
@@ -17,6 +20,7 @@ initvars:
   whiteconc: 0.24
   blackconc: 0.01
   rab_i: 0.17
+  fox_i: 0.15
 adaptvars:
   dtpassmin: 0.1
   dtpassmax: 5.0
