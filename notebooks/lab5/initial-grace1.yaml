@@ -1,14 +1,14 @@
 timevars:
   dt: 0.05
   tstart: 0.0
-  tend: 50.0
+  tend: 60.0
 uservars:
   albedo_white: 0.75
   chi: 0.3
   rabchi: 0.3
   foxchi: 0.2
   Crgr: 1
-  Crbr: 2
+  Crbr: 1
   Cfgr: 1
   Cfbr: 1
   S0: 3668.0
@@ -17,7 +17,7 @@ uservars:
   R: 0.12
   albedo_ground: 0.5
 initvars:
-  whiteconc: 0.24
+  whiteconc: 0.25
   blackconc: 0.01
   rab_i: 0.17
   fox_i: 0.15
